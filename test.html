@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collapsible Sections Webpage</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .history-box, .collapsible, .content {
+    width: 90%; /* Increase width for larger screens */
+    max-width: 1200px; /* Set a maximum width for very large screens */
+  }
+  .history-box {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .collapsible {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    text-align: left;
+  }
+  .content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+  details > summary {
+    outline: none;
+    cursor: pointer;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:before {
+    content: '▶';
+    padding-right: 5px;
+    font-size: 1.2em;
+  }
+  details[open] summary:before {
+    content: '▼';
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .history-box, .collapsible, .content {
+      width: 95%; /* Further increase the width on smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="history-box">
+  <h2>History</h2>
+</div>
+
+<details class="collapsible">
+  <summary>Architecture and Layout</summary>
+  <!-- 在这里插入图片 -->
+  <img src="C:\Users\osborn\Desktop\12.webp" alt="Architecture and Layout Image" style="width:80%;">
+  <div class="content">
+    <p>Early workhouses were non-residential work sites, but purpose-built residential workhouses emerged in the 18th century. Designs included separate accommodation for different groups and exercise yards. Architectural plans included courtyard, square/cruciate, corridor, and pavilion block concepts.</p>
+  </div>
+</details>
+
+<details class="collapsible">
+  <summary>Living Conditions</summary>
+  <!-- 在这里插入图片 -->
+  <img src="C:\Users\osborn\Desktop\222.png" alt="Living Conditions Image" style="width:80%;">
+  <div class="content">
+    <p>Accommodation varied based on individual groups such as the elderly, children, able-bodied males, and females, but many workhouses opted for mixed accommodation due to unpredictability in numbers. Living conditions were deliberately kept below the lowest standard of an independent laborer to discourage dependency.</p>
+  </div>
+</details>
+
+<details class="collapsible">
+  <summary>Food and Diet</summary>
+  <!-- 在这里插入图片 -->
+  <img src="C:\Users\osborn\Desktop\resize.webp" alt="Food and Diet Image" style="width:80%;">
+  <div class="content">
+    <p>The food provided was very basic and monotonous, often in limited quantities. Staples might include bread, gruel, and some cheap vegetables.</p>
+  </div>
+</details>
+
+<details class="collapsible">
+  <summary>Admission and Daily Routine</summary>
+  <!-- 在这里插入图片 -->
+  <img src="C:\Users\osborn\Desktop\stonecracker.jpg" alt="Admission and Daily Routine Image" style="width:80%;">
+  <div class="content">
+    <p>People seeking to enter a workhouse would apply through a relieving officer and receive a ticket for admission. Upon arrival, families were separated, their personal clothes stored away, and uniforms issued. The day typically began early with a bell at 6 am (7 am in winter), followed by breakfast, work, dinner, more work, supper, and then bedtime at 8 pm. The work assigned varied by gender, with women doing domestic chores and men involved in hard labor like stone breaking or bone crushing.</p>
+</div>
+</details>
+
+<details class="collapsible">
+<summary>Death and Burial</summary>
+<!-- 在这里插入图片 -->
+<div class="content">
+  <p>When an inmate died, their family was notified for funeral arrangements. If the family couldn't afford it, the Guardians arranged a burial in a local cemetery, often in the cheapest possible coffin or shroud and sometimes in un-consecrated ground.</p>
+</div>
+</details>
+
+<details class="collapsible">
+<summary>Medical and Nursing Cares</summary>
+<!-- 在这里插入图片 -->
+<img src="C:\Users\osborn\Desktop\v2-b23875766784053cf879c13d5c1d0a30_1440w.webp" alt="Medical and Nursing Care Image" style="width:80%;">
+<div class="content">
+  <p>Medical supervision was slow to improve and was often provided by doctors who struggled to establish a private practice. Nurses were generally untrained, and nursing duties were often performed by elderly female inmates.</p>
+</div>
+</details>
+
+</body>
+</html>
+
